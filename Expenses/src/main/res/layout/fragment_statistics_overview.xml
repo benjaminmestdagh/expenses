@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/expenses_title"
+            android:id="@+id/statistics_overview_title"
+            android:layout_gravity="left|center_vertical"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/statistics_overview_subtitle"
+            android:layout_below="@+id/statistics_overview_title"/>
+
+    <ScrollView
+            android:id="@+id/statistics_overview_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statistics_overview_subtitle">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_overview_amount_title"
+                android:layout_marginBottom="5dp"
+                style="?android:attr/listSeparatorTextViewStyle"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_overview_max_amount"
+                android:id="@+id/stat_overview_max_amount"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_min_amount"
+                    android:id="@+id/stat_overview_min_amount"
+                    android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_avg_amount"
+                    android:id="@+id/stat_overview_avg_amount"
+                    android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_currency_title"
+                    android:layout_marginBottom="5dp"
+                    style="?android:attr/listSeparatorTextViewStyle"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_max_currency"
+                    android:id="@+id/stat_overview_max_currency"
+                    android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_min_currency"
+                    android:id="@+id/stat_overview_min_currency"
+                    android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_category_title"
+                    android:layout_marginBottom="5dp"
+                    style="?android:attr/listSeparatorTextViewStyle"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_max_category"
+                    android:id="@+id/stat_overview_max_category"
+                    android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_min_category"
+                    android:id="@+id/stat_overview_min_category"
+                    android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_payment_method_title"
+                    android:layout_marginBottom="5dp"
+                    style="?android:attr/listSeparatorTextViewStyle"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_max_payment_method"
+                    android:id="@+id/stat_overview_max_payment_method"
+                    android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_min_payment_method"
+                    android:id="@+id/stat_overview_min_payment_method"
+                    android:paddingBottom="5dp"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stat_overview_date_range"
+                    android:layout_marginBottom="5dp"
+                    style="?android:attr/listSeparatorTextViewStyle"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/stat_overview_date_range"
+                    android:paddingBottom="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

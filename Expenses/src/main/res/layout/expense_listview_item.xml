@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/expense_list_image"
+            android:src="@drawable/ic_bankcards"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+
+    <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/expense_list_item"
+                  android:layout_toRightOf="@+id/expense_list_image">
+
+        <TextView android:id="@+id/expense_view"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                  android:paddingTop="5dp" />
+
+        <TextView android:id="@+id/expense_view_total"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:paddingBottom="5dp" />
+
+    </LinearLayout>
+</RelativeLayout>

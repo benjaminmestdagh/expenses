@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/pref_currency_title"
+            android:key="pref_key_currency_settings">
+        <ListPreference
+                android:key="pref_currency_base"
+                android:title="@string/pref_currency_base_title"
+                android:summary="@string/pref_currency_base_text"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/pref_payment_methods_title"
+            android:key="pref_key_payment_methods_settings">
+        <Preference android:title="@string/pref_payment_methods_set" >
+            <intent android:action=".settings.PaymentMethodsListActivity" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

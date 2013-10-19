@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/stat_account_menu_item"
+          android:title="@string/stat_account"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_stat" />
+    <item android:id="@+id/edit_account_menu_item"
+          android:title="@string/edit_account"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_edit"
+          android:showAsAction="always"/>
+    <item android:id="@+id/delete_account_menu_item"
+          android:title="@string/delete_account"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_delete"
+          android:showAsAction="ifRoom"/>
+</menu>

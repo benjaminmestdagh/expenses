@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".EditAccountsActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/editaccounts_title"
+            android:layout_gravity="left|center_vertical"/>
+
+    <ScrollView
+            android:id="@+id/editaccounts_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editaccounts_title">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                    android:text="@string/editaccount_name"
+                    android:id="@+id/editaccount_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+            <EditText
+                    android:id="@+id/editaccount_editname"
+                    android:hint="@string/editaccount_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editaccount_name"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"/>
+
+            <TextView
+                    android:text="@string/editaccount_currency"
+                    android:id="@+id/editaccount_currency"
+                    android:layout_below="@+id/editaccount_editname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+            <Spinner
+                    android:id="@+id/editaccount_currencyselector"
+                    android:layout_below="@+id/editaccount_currency"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/currency_prompt"
+                    android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editaccount_currencyselector"
+                    android:gravity="center_horizontal" >
+
+                <Button
+                        android:text="@string/save"
+                        android:id="@+id/editaccount_save_button"
+                        android:onClick="onSaveAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <Button
+                        android:text="@string/cancel"
+                        android:id="@+id/editaccount_cancel_button"
+                        android:onClick="onCancelAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

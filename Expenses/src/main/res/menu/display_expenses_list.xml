@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/search_expense_menu_item"
+          android:title="@string/search_expenses"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_search"
+          android:showAsAction="always|collapseActionView"
+          android:actionViewClass="android.widget.SearchView"/>
+    <item android:id="@+id/stat_expense_menu_item"
+          android:title="@string/stat_account"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_stat"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/new_expense_menu_item"
+        android:title="@string/new_expense"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_new"
+        android:showAsAction="always|withText" />
+</menu>
